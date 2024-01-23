@@ -1,0 +1,397 @@
+exercise_name,muscle_groups,match_score,Muscle_Group,Anterior_Posterior,Push_Pull_Legs
+Lateral Raise (Cable),side delt,100,side delt,anterior,push
+Lateral Raise (Dumbbell),side delt,100,side delt,anterior,push
+Overhead Press (Barbell),"front delt, triceps",100,front delt,anterior,push
+Overhead Press (Barbell),"front delt, triceps",100,triceps,anterior,push
+Bench Press (Barbell),"chest, front delt, triceps",100,chest,anterior,push
+Bench Press (Barbell),"chest, front delt, triceps",100,front delt,anterior,push
+Bench Press (Barbell),"chest, front delt, triceps",100,triceps,anterior,push
+Bench Press (Cable),"chest, front delt, triceps",100,chest,anterior,push
+Bench Press (Cable),"chest, front delt, triceps",100,front delt,anterior,push
+Bench Press (Cable),"chest, front delt, triceps",100,triceps,anterior,push
+Triceps Dip (Assisted),triceps,100,triceps,anterior,push
+Leg Press,"quads, glutes",100,quads,Unclear,legs
+Leg Press,"quads, glutes",100,glutes,Unclear,legs
+Seated Row (Cable),"lats, rear delt, biceps",100,lats,posterior,pull
+Seated Row (Cable),"lats, rear delt, biceps",100,rear delt,posterior,pull
+Seated Row (Cable),"lats, rear delt, biceps",100,biceps,posterior,pull
+Standing Calf Raise (Smith Machine),calves,100,calves,anterior,legs
+Seated Calf Raise (Machine),calves,100,calves,anterior,legs
+Squat (Barbell),"quads, glutes",100,quads,Unclear,legs
+Squat (Barbell),"quads, glutes",100,glutes,Unclear,legs
+Stiff Leg Deadlift (Barbell),"hamstrings, lower back",100,hamstrings,posterior,Unclear
+Stiff Leg Deadlift (Barbell),"hamstrings, lower back",100,lower back,posterior,Unclear
+Lying Leg Curl (Machine),hamstrings,100,hamstrings,posterior,legs
+Face Pull (Cable),"rear delt, side delt, traps, rhomboids",100,rear delt,posterior,pull
+Face Pull (Cable),"rear delt, side delt, traps, rhomboids",100,side delt,posterior,pull
+Face Pull (Cable),"rear delt, side delt, traps, rhomboids",100,,posterior,pull
+Face Pull (Cable),"rear delt, side delt, traps, rhomboids",100,rhomboids,posterior,pull
+Bicep Curl (Dumbbell),"biceps, forearms",100,biceps,posterior,pull
+Bicep Curl (Dumbbell),"biceps, forearms",100,forearms,posterior,pull
+Bent Over Row - Underhand (Barbell),"lats, biceps, rear delt, lower back",100,lats,posterior,pull
+Bent Over Row - Underhand (Barbell),"lats, biceps, rear delt, lower back",100,biceps,posterior,pull
+Bent Over Row - Underhand (Barbell),"lats, biceps, rear delt, lower back",100,rear delt,posterior,pull
+Bent Over Row - Underhand (Barbell),"lats, biceps, rear delt, lower back",100,lower back,posterior,pull
+Preacher Curl (Machine),biceps,100,biceps,posterior,pull
+Lat Pulldown - Wide Grip (Cable),"lats, biceps, rear delt",100,lats,posterior,pull
+Lat Pulldown - Wide Grip (Cable),"lats, biceps, rear delt",100,biceps,posterior,pull
+Lat Pulldown - Wide Grip (Cable),"lats, biceps, rear delt",100,rear delt,posterior,pull
+Shoulder Press (Machine),"front delt, side delt, triceps",100,front delt,anterior,push
+Shoulder Press (Machine),"front delt, side delt, triceps",100,side delt,anterior,push
+Shoulder Press (Machine),"front delt, side delt, triceps",100,triceps,anterior,push
+Seated Leg Curl (Machine),hamstrings,100,hamstrings,posterior,legs
+Hip Adductor (Machine),adductors,100,adductors,anterior,legs
+Seated Leg Press (Machine),"quads, glutes",100,quads,Unclear,legs
+Seated Leg Press (Machine),"quads, glutes",100,glutes,Unclear,legs
+Triceps Extension (Cable),triceps,100,triceps,anterior,push
+Bicep Curl (Machine),biceps,100,biceps,posterior,pull
+Cable Crossover,"chest, front delt",100,chest,anterior,push
+Cable Crossover,"chest, front delt",100,front delt,anterior,push
+Hip Abductor (Machine),abductors,100,abductors,posterior,legs
+Lat Pulldown (Machine),"lats, biceps",100,lats,posterior,pull
+Lat Pulldown (Machine),"lats, biceps",100,biceps,posterior,pull
+Iso-Lateral Row (Machine),"lats, biceps",100,lats,posterior,pull
+Iso-Lateral Row (Machine),"lats, biceps",100,biceps,posterior,pull
+Glute Kickback (Machine),glutes,100,glutes,posterior,legs
+Iso-Lateral Chest Press (Machine),"chest, front delt, triceps",100,chest,anterior,push
+Iso-Lateral Chest Press (Machine),"chest, front delt, triceps",100,front delt,anterior,push
+Iso-Lateral Chest Press (Machine),"chest, front delt, triceps",100,triceps,anterior,push
+Reverse Fly (Machine),rear delt,100,rear delt,posterior,pull
+Bicep Curl (Barbell),biceps,100,biceps,posterior,pull
+Bench Press - Close Grip (Barbell),"chest, triceps, front delt",100,chest,anterior,push
+Bench Press - Close Grip (Barbell),"chest, triceps, front delt",100,triceps,anterior,push
+Bench Press - Close Grip (Barbell),"chest, triceps, front delt",100,front delt,anterior,push
+Bicep Curl (Cable),biceps,100,biceps,posterior,pull
+Bench Press (Dumbbell),"chest, triceps, front delt",100,chest,anterior,push
+Bench Press (Dumbbell),"chest, triceps, front delt",100,triceps,anterior,push
+Bench Press (Dumbbell),"chest, triceps, front delt",100,front delt,anterior,push
+Triceps Extension,triceps,100,triceps,anterior,push
+Seated Overhead Press (Dumbbell),front delt,100,front delt,anterior,push
+Reverse Fly (Cable),rear delt,100,rear delt,posterior,pull
+Decline Bench Press (Barbell),"chest, triceps, front delt",100,chest,anterior,push
+Decline Bench Press (Barbell),"chest, triceps, front delt",100,triceps,anterior,push
+Decline Bench Press (Barbell),"chest, triceps, front delt",100,front delt,anterior,push
+Overhead Press (Dumbbell),front delt,100,front delt,anterior,push
+Incline Bench Press (Barbell),"chest, front delt, triceps",100,chest,anterior,push
+Incline Bench Press (Barbell),"chest, front delt, triceps",100,front delt,anterior,push
+Incline Bench Press (Barbell),"chest, front delt, triceps",100,triceps,anterior,push
+Chest Press (Machine),"chest, front delt, triceps",100,chest,anterior,push
+Chest Press (Machine),"chest, front delt, triceps",100,front delt,anterior,push
+Chest Press (Machine),"chest, front delt, triceps",100,triceps,anterior,push
+Chest Fly,"chest, front delt",100,chest,anterior,push
+Chest Fly,"chest, front delt",100,front delt,anterior,push
+Trap Bar Deadlift,"lower back, glutes, quads, forearms",100,lower back,posterior,Unclear
+Trap Bar Deadlift,"lower back, glutes, quads, forearms",100,glutes,posterior,Unclear
+Trap Bar Deadlift,"lower back, glutes, quads, forearms",100,quads,posterior,Unclear
+Trap Bar Deadlift,"lower back, glutes, quads, forearms",100,forearms,posterior,Unclear
+Seated Row (Machine),"lats, rear delt, biceps, forearms",100,lats,posterior,pull
+Seated Row (Machine),"lats, rear delt, biceps, forearms",100,rear delt,posterior,pull
+Seated Row (Machine),"lats, rear delt, biceps, forearms",100,biceps,posterior,pull
+Seated Row (Machine),"lats, rear delt, biceps, forearms",100,forearms,posterior,pull
+Lat Pulldown (Cable),"lats, biceps, forearms",100,lats,posterior,pull
+Lat Pulldown (Cable),"lats, biceps, forearms",100,biceps,posterior,pull
+Lat Pulldown (Cable),"lats, biceps, forearms",100,forearms,posterior,pull
+Hack Squat,"quads, glutes",100,quads,Unclear,legs
+Hack Squat,"quads, glutes",100,glutes,Unclear,legs
+Incline Bench Press (Dumbbell),"chest, front delt, triceps",100,chest,anterior,push
+Incline Bench Press (Dumbbell),"chest, front delt, triceps",100,front delt,anterior,push
+Incline Bench Press (Dumbbell),"chest, front delt, triceps",100,triceps,anterior,push
+Leg Extension (Machine),quads,100,quads,anterior,legs
+Seated Calf Raise (Plate Loaded),calves,100,calves,anterior,legs
+Preacher Curl (Dumbbell),biceps,100,biceps,posterior,pull
+Bent Over Row (Barbell),"lats, rhomboids, lower back",100,lats,posterior,pull
+Bent Over Row (Barbell),"lats, rhomboids, lower back",100,rhomboids,posterior,pull
+Bent Over Row (Barbell),"lats, rhomboids, lower back",100,lower back,posterior,pull
+Seated Wide-Grip Row (Cable),"lats, rhomboids",100,lats,posterior,pull
+Seated Wide-Grip Row (Cable),"lats, rhomboids",100,rhomboids,posterior,pull
+Preacher Curl (Barbell),biceps,100,biceps,posterior,pull
+Lat Pulldown (Single Arm),"lats, rhomboids",100,lats,posterior,pull
+Lat Pulldown (Single Arm),"lats, rhomboids",100,rhomboids,posterior,pull
+Sumo Deadlift (Barbell),"quads, glutes, lower back",100,quads,posterior,legs
+Sumo Deadlift (Barbell),"quads, glutes, lower back",100,glutes,posterior,legs
+Sumo Deadlift (Barbell),"quads, glutes, lower back",100,lower back,posterior,legs
+Squat (Smith Machine),"quads, glutes",100,quads,Unclear,legs
+Squat (Smith Machine),"quads, glutes",100,glutes,Unclear,legs
+Bent Over One Arm Row (Dumbbell),"lats, rhomboids, lower back",100,lats,posterior,pull
+Bent Over One Arm Row (Dumbbell),"lats, rhomboids, lower back",100,rhomboids,posterior,pull
+Bent Over One Arm Row (Dumbbell),"lats, rhomboids, lower back",100,lower back,posterior,pull
+Bench Press (Smith Machine),"chest, front delt, triceps",100,chest,anterior,push
+Bench Press (Smith Machine),"chest, front delt, triceps",100,front delt,anterior,push
+Bench Press (Smith Machine),"chest, front delt, triceps",100,triceps,anterior,push
+Triceps Pushdown (Cable - Straight Bar),triceps,100,triceps,anterior,push
+Decline Bench Press (Dumbbell),"chest, front delt, triceps",100,chest,anterior,push
+Decline Bench Press (Dumbbell),"chest, front delt, triceps",100,front delt,anterior,push
+Decline Bench Press (Dumbbell),"chest, front delt, triceps",100,triceps,anterior,push
+Bent Over Row (Dumbbell),"lats, rear delt, biceps, forearms",100,lats,posterior,pull
+Bent Over Row (Dumbbell),"lats, rear delt, biceps, forearms",100,rear delt,posterior,pull
+Bent Over Row (Dumbbell),"lats, rear delt, biceps, forearms",100,biceps,posterior,pull
+Bent Over Row (Dumbbell),"lats, rear delt, biceps, forearms",100,forearms,posterior,pull
+Reverse Fly (Dumbbell),"rear delt, rhomboids",100,rear delt,posterior,pull
+Reverse Fly (Dumbbell),"rear delt, rhomboids",100,rhomboids,posterior,pull
+Triceps Extension (Dumbbell),triceps,100,triceps,anterior,push
+Tricep kickback,triceps,100,triceps,anterior,push
+Concentration Curl (Dumbbell),biceps,100,biceps,posterior,pull
+Incline Curl (Dumbbell),biceps,100,biceps,posterior,pull
+W raise,"front delt, side delt",100,front delt,anterior,push
+W raise,"front delt, side delt",100,side delt,anterior,push
+Deadlift (Dumbbell),"lower back, glutes, quads, hamstrings, forearms",100,lower back,posterior,legs
+Deadlift (Dumbbell),"lower back, glutes, quads, hamstrings, forearms",100,glutes,posterior,legs
+Deadlift (Dumbbell),"lower back, glutes, quads, hamstrings, forearms",100,quads,posterior,legs
+Deadlift (Dumbbell),"lower back, glutes, quads, hamstrings, forearms",100,hamstrings,posterior,legs
+Deadlift (Dumbbell),"lower back, glutes, quads, hamstrings, forearms",100,forearms,posterior,legs
+Lateral Raise (Machine),side delt,100,side delt,anterior,push
+Calf Press on Seated Leg Press,"calves, quads, glutes",100,calves,anterior,legs
+Calf Press on Seated Leg Press,"calves, quads, glutes",100,quads,anterior,legs
+Calf Press on Seated Leg Press,"calves, quads, glutes",100,glutes,anterior,legs
+Triceps Extension (Machine),triceps,100,triceps,anterior,push
+Deadlift (Barbell),"lower back, glutes, quads, hamstrings, forearms",100,lower back,posterior,legs
+Deadlift (Barbell),"lower back, glutes, quads, hamstrings, forearms",100,glutes,posterior,legs
+Deadlift (Barbell),"lower back, glutes, quads, hamstrings, forearms",100,quads,posterior,legs
+Deadlift (Barbell),"lower back, glutes, quads, hamstrings, forearms",100,hamstrings,posterior,legs
+Deadlift (Barbell),"lower back, glutes, quads, hamstrings, forearms",100,forearms,posterior,legs
+Wide Pull Up,"lats, biceps, forearms",100,lats,posterior,pull
+Wide Pull Up,"lats, biceps, forearms",100,biceps,posterior,pull
+Wide Pull Up,"lats, biceps, forearms",100,forearms,posterior,pull
+Incline Chest Press (Machine),"chest, front delt, triceps",100,chest,anterior,push
+Incline Chest Press (Machine),"chest, front delt, triceps",100,front delt,anterior,push
+Incline Chest Press (Machine),"chest, front delt, triceps",100,triceps,anterior,push
+Squat (Machine),"quads, glutes",100,quads,Unclear,legs
+Squat (Machine),"quads, glutes",100,glutes,Unclear,legs
+Lat Pulldown - Underhand (Cable),"lats, biceps, forearms",100,lats,posterior,pull
+Lat Pulldown - Underhand (Cable),"lats, biceps, forearms",100,biceps,posterior,pull
+Lat Pulldown - Underhand (Cable),"lats, biceps, forearms",100,forearms,posterior,pull
+Calf Press on Leg Press,"calves, quads, glutes",100,calves,anterior,legs
+Calf Press on Leg Press,"calves, quads, glutes",100,quads,anterior,legs
+Calf Press on Leg Press,"calves, quads, glutes",100,glutes,anterior,legs
+Back Extension,"lower back, glutes, hamstrings",100,lower back,posterior,legs
+Back Extension,"lower back, glutes, hamstrings",100,glutes,posterior,legs
+Back Extension,"lower back, glutes, hamstrings",100,hamstrings,posterior,legs
+Shoulder Press (Plate Loaded),"front delt, side delt, triceps",100,front delt,anterior,push
+Shoulder Press (Plate Loaded),"front delt, side delt, triceps",100,side delt,anterior,push
+Shoulder Press (Plate Loaded),"front delt, side delt, triceps",100,triceps,anterior,push
+Chin Up,"lats, biceps, forearms",100,lats,posterior,pull
+Chin Up,"lats, biceps, forearms",100,biceps,posterior,pull
+Chin Up,"lats, biceps, forearms",100,forearms,posterior,pull
+Press Up,"chest, front delt, triceps, abs",100,chest,anterior,push
+Press Up,"chest, front delt, triceps, abs",100,front delt,anterior,push
+Press Up,"chest, front delt, triceps, abs",100,triceps,anterior,push
+Press Up,"chest, front delt, triceps, abs",100,abs,anterior,push
+Rack Pull (Barbell),"lower back, glutes, hamstrings",100,lower back,posterior,legs
+Rack Pull (Barbell),"lower back, glutes, hamstrings",100,glutes,posterior,legs
+Rack Pull (Barbell),"lower back, glutes, hamstrings",100,hamstrings,posterior,legs
+Rack Overhead Press,"front delt, triceps",100,front delt,anterior,push
+Rack Overhead Press,"front delt, triceps",100,triceps,anterior,push
+Rack Bench Press,"chest, front delt, triceps",100,chest,anterior,push
+Rack Bench Press,"chest, front delt, triceps",100,front delt,anterior,push
+Rack Bench Press,"chest, front delt, triceps",100,triceps,anterior,push
+Pull Up,"lats, biceps, forearms",100,lats,posterior,pull
+Pull Up,"lats, biceps, forearms",100,biceps,posterior,pull
+Pull Up,"lats, biceps, forearms",100,forearms,posterior,pull
+Triceps Dip,"triceps, chest",100,triceps,anterior,push
+Triceps Dip,"triceps, chest",100,chest,anterior,push
+High Row,"lats, rear delt, biceps",100,lats,posterior,pull
+High Row,"lats, rear delt, biceps",100,rear delt,posterior,pull
+High Row,"lats, rear delt, biceps",100,biceps,posterior,pull
+Front Lat Pulldown,"lats, biceps, forearms",100,lats,posterior,pull
+Front Lat Pulldown,"lats, biceps, forearms",100,biceps,posterior,pull
+Front Lat Pulldown,"lats, biceps, forearms",100,forearms,posterior,pull
+Chest Dip,"chest, triceps",100,chest,anterior,push
+Chest Dip,"chest, triceps",100,triceps,anterior,push
+Iso-Lateral Decline Press,"chest, triceps, front delt",100,chest,anterior,push
+Iso-Lateral Decline Press,"chest, triceps, front delt",100,triceps,anterior,push
+Iso-Lateral Decline Press,"chest, triceps, front delt",100,front delt,anterior,push
+Hexagon Deadlift,"lower back, glutes, quads, hamstrings, forearms",100,lower back,posterior,legs
+Hexagon Deadlift,"lower back, glutes, quads, hamstrings, forearms",100,glutes,posterior,legs
+Hexagon Deadlift,"lower back, glutes, quads, hamstrings, forearms",100,quads,posterior,legs
+Hexagon Deadlift,"lower back, glutes, quads, hamstrings, forearms",100,hamstrings,posterior,legs
+Hexagon Deadlift,"lower back, glutes, quads, hamstrings, forearms",100,forearms,posterior,legs
+Crunch (Machine),abs,100,abs,anterior,push
+Slight Incline Dumbbell Press,"chest, front delt, triceps",100,chest,anterior,push
+Slight Incline Dumbbell Press,"chest, front delt, triceps",100,front delt,anterior,push
+Slight Incline Dumbbell Press,"chest, front delt, triceps",100,triceps,anterior,push
+D.Y. Row,"lats, rhomboids, biceps, forearms",100,lats,posterior,pull
+D.Y. Row,"lats, rhomboids, biceps, forearms",100,rhomboids,posterior,pull
+D.Y. Row,"lats, rhomboids, biceps, forearms",100,biceps,posterior,pull
+D.Y. Row,"lats, rhomboids, biceps, forearms",100,forearms,posterior,pull
+Bench Bicep Curl,biceps,100,biceps,posterior,pull
+Iso-Lateral Bench,"chest, triceps, front delt",100,chest,anterior,push
+Iso-Lateral Bench,"chest, triceps, front delt",100,triceps,anterior,push
+Iso-Lateral Bench,"chest, triceps, front delt",100,front delt,anterior,push
+Iso-Lateral Shoulder Press,"shoulders, front delt, side delt, triceps",100,,anterior,push
+Iso-Lateral Shoulder Press,"shoulders, front delt, side delt, triceps",100,front delt,anterior,push
+Iso-Lateral Shoulder Press,"shoulders, front delt, side delt, triceps",100,side delt,anterior,push
+Iso-Lateral Shoulder Press,"shoulders, front delt, side delt, triceps",100,triceps,anterior,push
+Vertical Traction,"lats, rear delt, biceps",100,lats,posterior,pull
+Vertical Traction,"lats, rear delt, biceps",100,rear delt,posterior,pull
+Vertical Traction,"lats, rear delt, biceps",100,biceps,posterior,pull
+Bicep Curl Inwards (Machine),biceps,100,biceps,posterior,pull
+Iso-Lateral Incline Press,"chest, front delt, triceps",100,chest,anterior,push
+Iso-Lateral Incline Press,"chest, front delt, triceps",100,front delt,anterior,push
+Iso-Lateral Incline Press,"chest, front delt, triceps",100,triceps,anterior,push
+Standing Calf Raise (Machine),calves,100,calves,anterior,legs
+Ninja Extension,triceps,100,triceps,anterior,push
+Diagonal Bench Press,"chest, front delt, triceps",100,chest,anterior,push
+Diagonal Bench Press,"chest, front delt, triceps",100,front delt,anterior,push
+Diagonal Bench Press,"chest, front delt, triceps",100,triceps,anterior,push
+Bicep Cable Machine,biceps,100,biceps,posterior,pull
+T Bar Row,"lats, rear delt, biceps",100,lats,posterior,pull
+T Bar Row,"lats, rear delt, biceps",100,rear delt,posterior,pull
+T Bar Row,"lats, rear delt, biceps",100,biceps,posterior,pull
+Hammer Curl (Dumbbell),biceps,100,biceps,posterior,pull
+Archer Curl,biceps,100,biceps,posterior,pull
+Supernated Tricep Extension,triceps,100,triceps,anterior,push
+Mid Row (Machine),"lats, rear delt, biceps",100,lats,posterior,pull
+Mid Row (Machine),"lats, rear delt, biceps",100,rear delt,posterior,pull
+Mid Row (Machine),"lats, rear delt, biceps",100,biceps,posterior,pull
+Overhead Press (Smith Machine),"front delt, triceps",100,front delt,anterior,push
+Overhead Press (Smith Machine),"front delt, triceps",100,triceps,anterior,push
+Narrow Lat Pulldown,"lats, biceps",100,lats,posterior,pull
+Narrow Lat Pulldown,"lats, biceps",100,biceps,posterior,pull
+Vertical High Row,"trapezius, rear delt",100,trapezius,posterior,pull
+Vertical High Row,"trapezius, rear delt",100,rear delt,posterior,pull
+Horizontal High Row,"trapezius, rear delt",100,trapezius,posterior,pull
+Horizontal High Row,"trapezius, rear delt",100,rear delt,posterior,pull
+Reverse Cable Crossover,"chest, front delt",100,chest,anterior,push
+Reverse Cable Crossover,"chest, front delt",100,front delt,anterior,push
+Dual Pulley Row,"lats, biceps",100,lats,posterior,pull
+Dual Pulley Row,"lats, biceps",100,biceps,posterior,pull
+Rear Delt Row,"rear delt, lats",100,rear delt,posterior,pull
+Rear Delt Row,"rear delt, lats",100,lats,posterior,pull
+Lat Pulldown Wide-Grip (Machine),"lats, biceps",100,lats,posterior,pull
+Lat Pulldown Wide-Grip (Machine),"lats, biceps",100,biceps,posterior,pull
+Shrug (Barbell),trapezius,100,trapezius,posterior,pull
+Romanian Deadlift (Barbell),"hamstrings, glutes",100,hamstrings,posterior,legs
+Romanian Deadlift (Barbell),"hamstrings, glutes",100,glutes,posterior,legs
+Ab Coaster,"abs, obliques",100,abs,anterior,push
+Ab Coaster,"abs, obliques",100,obliques,anterior,push
+Partner Sit Up,"abs, obliques",100,abs,anterior,push
+Partner Sit Up,"abs, obliques",100,obliques,anterior,push
+Bulgarian Split Squat,"quads, glutes",100,quads,Unclear,legs
+Bulgarian Split Squat,"quads, glutes",100,glutes,Unclear,legs
+Hip Thrust (Barbell),"glutes, hamstrings",100,glutes,posterior,legs
+Hip Thrust (Barbell),"glutes, hamstrings",100,hamstrings,posterior,legs
+Battle Ropes,"shoulders, arms, abs",100,,anterior,push
+Battle Ropes,"shoulders, arms, abs",100,,anterior,push
+Battle Ropes,"shoulders, arms, abs",100,abs,anterior,push
+Lying Leg Curl (Plate Loaded),hamstrings,100,hamstrings,posterior,legs
+Shrug (Machine),trapezius,100,trapezius,posterior,pull
+Seated Overhead Press (Barbell),"shoulders, triceps",100,,anterior,push
+Seated Overhead Press (Barbell),"shoulders, triceps",100,triceps,anterior,push
+Iso-Lateral Row,"lats, biceps",100,lats,posterior,pull
+Iso-Lateral Row,"lats, biceps",100,biceps,posterior,pull
+Iso-Lateral High Row,"lats, biceps",100,lats,posterior,pull
+Iso-Lateral High Row,"lats, biceps",100,biceps,posterior,pull
+Tibia Raise,calves,100,calves,anterior,legs
+Curved Hack Squat,"quads, glutes",100,quads,Unclear,legs
+Curved Hack Squat,"quads, glutes",100,glutes,Unclear,legs
+Kneeling Leg Curl,hamstrings,100,hamstrings,posterior,legs
+Glute Isolator,glutes,100,glutes,posterior,legs
+Bicep Curl (Plate Loaded),biceps,100,biceps,posterior,pull
+Seated Overhead Press (Smith Machine),"front delt, triceps",100,front delt,anterior,push
+Seated Overhead Press (Smith Machine),"front delt, triceps",100,triceps,anterior,push
+Glute Drive,glutes,100,glutes,posterior,legs
+Bulgarian Split Squat (Plate-Loaded),"quads, glutes",100,quads,Unclear,legs
+Bulgarian Split Squat (Plate-Loaded),"quads, glutes",100,glutes,Unclear,legs
+Single-Leg Seated Leg Curl,hamstrings,100,hamstrings,posterior,legs
+Single-Leg Leg Extension,quads,100,quads,anterior,legs
+Seated High Row,"trapezius, lats, rear delt, biceps",100,trapezius,posterior,pull
+Seated High Row,"trapezius, lats, rear delt, biceps",100,lats,posterior,pull
+Seated High Row,"trapezius, lats, rear delt, biceps",100,rear delt,posterior,pull
+Seated High Row,"trapezius, lats, rear delt, biceps",100,biceps,posterior,pull
+Padded Fly,"chest, front delt",100,chest,anterior,push
+Padded Fly,"chest, front delt",100,front delt,anterior,push
+Glute Master,glutes,100,glutes,posterior,legs
+Miti Snatch,"front delt, trapezius, lats, rear delt, biceps",100,front delt,posterior,pull
+Miti Snatch,"front delt, trapezius, lats, rear delt, biceps",100,trapezius,posterior,pull
+Miti Snatch,"front delt, trapezius, lats, rear delt, biceps",100,lats,posterior,pull
+Miti Snatch,"front delt, trapezius, lats, rear delt, biceps",100,rear delt,posterior,pull
+Miti Snatch,"front delt, trapezius, lats, rear delt, biceps",100,biceps,posterior,pull
+Wall Barbell Curl,biceps,100,biceps,posterior,pull
+Single-Arm Preacher Curl (Machine),biceps,100,biceps,posterior,pull
+Back Extension (Machine),"lower back, glutes",100,lower back,posterior,Unclear
+Back Extension (Machine),"lower back, glutes",100,glutes,posterior,Unclear
+Knee Raise (Captain's Chair),"abs, obliques",100,abs,anterior,push
+Knee Raise (Captain's Chair),"abs, obliques",100,obliques,anterior,push
+Seated Chest Fly,"chest, front delt",100,chest,anterior,push
+Seated Chest Fly,"chest, front delt",100,front delt,anterior,push
+Y Raise,front delt,100,front delt,anterior,push
+Iso-Lateral Wide Chest,"chest, front delt, triceps",100,chest,anterior,push
+Iso-Lateral Wide Chest,"chest, front delt, triceps",100,front delt,anterior,push
+Iso-Lateral Wide Chest,"chest, front delt, triceps",100,triceps,anterior,push
+Single-Arm Preacher Curl (Plate Loaded),biceps,100,biceps,posterior,pull
+Triceps Extension (Rope),triceps,100,triceps,anterior,push
+Single-Arm Lateral Raise (Machine),side delt,100,side delt,anterior,push
+Arnold Press (Dumbbell),"front delt, side delt, triceps",100,front delt,anterior,push
+Arnold Press (Dumbbell),"front delt, side delt, triceps",100,side delt,anterior,push
+Arnold Press (Dumbbell),"front delt, side delt, triceps",100,triceps,anterior,push
+Back Extension Deadlift,"lower back, glutes, hamstrings",100,lower back,posterior,legs
+Back Extension Deadlift,"lower back, glutes, hamstrings",100,glutes,posterior,legs
+Back Extension Deadlift,"lower back, glutes, hamstrings",100,hamstrings,posterior,legs
+High Row (Cable),"lats, rear delt, biceps",100,lats,posterior,pull
+High Row (Cable),"lats, rear delt, biceps",100,rear delt,posterior,pull
+High Row (Cable),"lats, rear delt, biceps",100,biceps,posterior,pull
+Half-Hack Squat,"quads, glutes",100,quads,Unclear,legs
+Half-Hack Squat,"quads, glutes",100,glutes,Unclear,legs
+Skullcrusher (Dumbbell),triceps,100,triceps,anterior,push
+Goblet Squat (Kettlebell),"quads, glutes",100,quads,Unclear,legs
+Goblet Squat (Kettlebell),"quads, glutes",100,glutes,Unclear,legs
+Hammer Curl (Cable),"biceps, forearms",100,biceps,posterior,pull
+Hammer Curl (Cable),"biceps, forearms",100,forearms,posterior,pull
+Single-Leg Rdl,"hamstrings, glutes",100,hamstrings,posterior,legs
+Single-Leg Rdl,"hamstrings, glutes",100,glutes,posterior,legs
+Hip Abductor (Cable),abductors,100,abductors,posterior,legs
+Lunge (Dumbbell),"quads, glutes",100,quads,Unclear,legs
+Lunge (Dumbbell),"quads, glutes",100,glutes,Unclear,legs
+Iso-Lateral Low Row,"lats, rear delt, biceps",100,lats,posterior,pull
+Iso-Lateral Low Row,"lats, rear delt, biceps",100,rear delt,posterior,pull
+Iso-Lateral Low Row,"lats, rear delt, biceps",100,biceps,posterior,pull
+Pull Over (Cable),"lats, chest, triceps",100,lats,anterior,push
+Pull Over (Cable),"lats, chest, triceps",100,chest,anterior,push
+Pull Over (Cable),"lats, chest, triceps",100,triceps,anterior,push
+Bench Press - Close Grip (Smith Machine),"chest, triceps, front delt",100,chest,anterior,push
+Bench Press - Close Grip (Smith Machine),"chest, triceps, front delt",100,triceps,anterior,push
+Bench Press - Close Grip (Smith Machine),"chest, triceps, front delt",100,front delt,anterior,push
+Cable Kickback,triceps,100,triceps,anterior,push
+Converging Shoulder Press,"front delt, side delt, triceps",100,front delt,anterior,push
+Converging Shoulder Press,"front delt, side delt, triceps",100,side delt,anterior,push
+Converging Shoulder Press,"front delt, side delt, triceps",100,triceps,anterior,push
+Converging Chest Press,"chest, front delt, triceps",100,chest,anterior,push
+Converging Chest Press,"chest, front delt, triceps",100,front delt,anterior,push
+Converging Chest Press,"chest, front delt, triceps",100,triceps,anterior,push
+Diverging Lat Pulldown (Machine),"lats, rear delt, biceps",100,lats,posterior,pull
+Diverging Lat Pulldown (Machine),"lats, rear delt, biceps",100,rear delt,posterior,pull
+Diverging Lat Pulldown (Machine),"lats, rear delt, biceps",100,biceps,posterior,pull
+Diverging Seated Row,"lats, rear delt, biceps",100,lats,posterior,pull
+Diverging Seated Row,"lats, rear delt, biceps",100,rear delt,posterior,pull
+Diverging Seated Row,"lats, rear delt, biceps",100,biceps,posterior,pull
+Deadlift (Smith Machine),"lower back, glutes, quads, hamstrings, forearms",100,lower back,posterior,legs
+Deadlift (Smith Machine),"lower back, glutes, quads, hamstrings, forearms",100,glutes,posterior,legs
+Deadlift (Smith Machine),"lower back, glutes, quads, hamstrings, forearms",100,quads,posterior,legs
+Deadlift (Smith Machine),"lower back, glutes, quads, hamstrings, forearms",100,hamstrings,posterior,legs
+Deadlift (Smith Machine),"lower back, glutes, quads, hamstrings, forearms",100,forearms,posterior,legs
+Standing Lateral Raise (Machine),side delt,100,side delt,anterior,push
+Iso-Lateral Lat Pulldown (Plate Loaded),"lats, rear delt, biceps",100,lats,posterior,pull
+Iso-Lateral Lat Pulldown (Plate Loaded),"lats, rear delt, biceps",100,rear delt,posterior,pull
+Iso-Lateral Lat Pulldown (Plate Loaded),"lats, rear delt, biceps",100,biceps,posterior,pull
+Lying Chest Fly (Machine),chest,100,chest,anterior,push
+Single-Leg Leg Press,"quads, glutes",100,quads,Unclear,legs
+Single-Leg Leg Press,"quads, glutes",100,glutes,Unclear,legs
+Romanian Deadlift (Dumbbell),"lower back, glutes, hamstrings",100,lower back,posterior,legs
+Romanian Deadlift (Dumbbell),"lower back, glutes, hamstrings",100,glutes,posterior,legs
+Romanian Deadlift (Dumbbell),"lower back, glutes, hamstrings",100,hamstrings,posterior,legs
+Squat (Dumbbell),"quads, glutes",100,quads,Unclear,legs
+Squat (Dumbbell),"quads, glutes",100,glutes,Unclear,legs
+Bench Press - Wide Grip (Barbell),"chest, front delt, triceps",100,chest,anterior,push
+Bench Press - Wide Grip (Barbell),"chest, front delt, triceps",100,front delt,anterior,push
+Bench Press - Wide Grip (Barbell),"chest, front delt, triceps",100,triceps,anterior,push
+Standing Calf Raise (Hack Squat),calves,100,calves,anterior,legs
+Bent Over Row (Smith Machine),"lats, biceps, forearms",100,lats,posterior,pull
+Bent Over Row (Smith Machine),"lats, biceps, forearms",100,biceps,posterior,pull
+Bent Over Row (Smith Machine),"lats, biceps, forearms",100,forearms,posterior,pull
+Bent Over Row - Underhand (Smith Machine),"lats, biceps, forearms",100,lats,posterior,pull
+Bent Over Row - Underhand (Smith Machine),"lats, biceps, forearms",100,biceps,posterior,pull
+Bent Over Row - Underhand (Smith Machine),"lats, biceps, forearms",100,forearms,posterior,pull
+Seated Row (Plate Loaded),"lats, biceps, forearms",100,lats,posterior,pull
+Seated Row (Plate Loaded),"lats, biceps, forearms",100,biceps,posterior,pull
+Seated Row (Plate Loaded),"lats, biceps, forearms",100,forearms,posterior,pull
+Overhead Triceps (Machine),triceps,100,triceps,anterior,push

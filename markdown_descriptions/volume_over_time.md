@@ -1,0 +1,1 @@
+Each point represents workout volume (measured in estimated 1RM, summed across sets); the line through the points is an exponential moving average.

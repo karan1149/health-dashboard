@@ -1,0 +1,1 @@
+The colour of each tile represents the frequency (number of sets) or volume (measured in estimated 1RM, summed across sets) of a given exercise category within a time range.
