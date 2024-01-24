@@ -19,17 +19,12 @@ plot_volume_over_time <- function(data, rollavg_length_volume = 0.005, exclude_z
       ) %>%
       ggplot(aes(
         x = date, 
-        y = one_rep_max#,
-        #text = paste(
-        #  "Date:", date, 
-        #  "<br>Volume (Estimated 1RM):", round(one_rep_max)
-        #)
+        y = one_rep_max
         )) +
       geom_point(alpha = 1 / 3, colour = "#1b9e77") +
       geom_line(
         aes(x = date, y = exp_moving_avg),
         colour = "#1b9e77",
-        #fill = NULL,
         size = 1
         ) +
       scale_fill_manual(
@@ -41,7 +36,6 @@ plot_volume_over_time <- function(data, rollavg_length_volume = 0.005, exclude_z
         expand = c(0,0)
         ) +
       scale_y_continuous(
-        # trans=scales::pseudo_log_trans(base = 2),
         expand = c(0, 0),
         limits = c(0, NA)
       ) +

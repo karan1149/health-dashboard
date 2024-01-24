@@ -84,22 +84,6 @@ plot_mental_health <- function(
     scale_y_continuous(lim = c(-(100+1), 100+1), breaks = seq(-100, 100, 25), expand = c(0, 0)) +
     theme_minimal_base()
 
-  # Convert ggplot to plotly and apply customizations
-  #plot <- ggplotly(plot) %>%
-  #  layout(
-  #    yaxis = list(title = 'Score'),
-  #    xaxis = list(
-  #      title = 'Date',
-  #      tickformat = '%b %Y',
-  #      dtick = "M1"  # Monthly ticks
-  #    ),
-  #    colorway = c("#1b9e77", "#d95f02", "#7570b3", "#e7298a", "#66a61e", "#e6ab02")
-  #  ) %>%
-  #  style(
-  #    hoverlabel = list(bgcolor = "white", font = list(family = "Arial", size = 12))#,
-  #    #margin = list(l = 60, r = 10, b = 50, t = 25, pad = 4)
-  #  )
-
   return(plot)
 }
 
@@ -133,7 +117,6 @@ add_multi_metric_elements <- function(plot, metric_names) {
         geom_point(aes(colour = metric), alpha = 1/(5*length(metric_names))) +
         geom_line(aes(y = exp_moving_avg, colour = metric, group = metric), size = 1, linetype = "solid") +
         scale_colour_manual(values = colors, labels = pretty_metric_levels) +
-        #scale_fill_manual(values = named_colors, labels = pretty_metric_names) +
         labs(colour = "Metric")
 }
 
@@ -144,13 +127,6 @@ theme_minimal_base <- function() {
     axis.text.y = element_text(size = 12),
     axis.title.x = element_blank(),
     axis.title.y = element_blank(),
-    plot.title = element_text(size = 20)#,
-    #legend.title = element_blank()#,
-    #legend.position = "bottom",
-    #legend.key.size = unit(1.5, "cm"),
-    #legend.key.height = unit(1, "cm"),
-    #legend.key.width = unit(1.5, "cm"),
-    #legend.text = element_text(size = 12)
-  ) #+
-  #guides(color = guide_legend(ncol = 1))
+    plot.title = element_text(size = 20)
+  )
 }

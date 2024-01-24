@@ -81,20 +81,7 @@ plot_one_rep_max <- function(
     }
 
     # Make adjustments for translating ggplot to plotly
-    plot <- ggplotly(plot, tooltip = "text") #%>%
-      #layout(
-      #  yaxis = list(title = 'Estimated One-Rep-Max (lbs)'),
-      #  xaxis = list(
-      #    title = 'Date',
-      #    tickformat = '%b %Y',
-      #    dtick = "M1"  # Monthly ticks
-      #  ),
-      #  colorway = c("#1b9e77", "#d95f02", "#7570b3", "#e7298a", "#66a61e", "#e6ab02")
-      #) #%>%
-      #style(
-      #  hoverlabel = list(bgcolor = "white", font = list(family = "Arial", size = 12)),
-      #  margin = list(l = 60, r = 10, b = 50, t = 25, pad = 4)
-      #)
+    plot <- ggplotly(plot, tooltip = "text")
 
     return(plot)
 }

@@ -11,6 +11,7 @@ library(bslib)
 library(scales)
 library(tools)
 library(shinyWidgets)
+library(markdown)
 
 # Tabs to load
 flag_tab_1rm <- TRUE
@@ -372,8 +373,8 @@ server <- function(input, output, session) {
       exercise_names = input$exercise_name,
       line_type = input$line_type,
       show_single_rep = input$show_single_rep,
-      highlight_best_lifts = input$highlight_best_lifts,  # New input from the checkbox
-      weightlifting_data = weightlifting_data  # Your data
+      highlight_best_lifts = input$highlight_best_lifts,
+      weightlifting_data = weightlifting_data
     )
   })
 
@@ -396,18 +397,14 @@ server <- function(input, output, session) {
 
   # Output for well-being plot
   output$mental_health_plot <- renderPlotly({
-    mental_health_data <- reactive({ mentalhealth_data }) # Replace with your actual data retrieval logic
+    mental_health_data <- reactive({ mentalhealth_data })
     plot_ggplot <- plot_mental_health(
       mental_health_data(), input$rollavg_length_mental_health, 
       input$mental_health_metric#, input$include_partial_data
       )
     
     # Convert ggplot to plotly
-    plot_plotly <- ggplotly(plot_ggplot, tooltip = "text") #%>%
-      #style(
-      #  hoverinfo = 'text',
-      #  hoverlabel = list(bgcolor = "white", font = list(family = "sans serif"))
-      #)
+    plot_plotly <- ggplotly(plot_ggplot, tooltip = "text")
 
     # Return the customized plotly object
     plot_plotly
