@@ -195,12 +195,13 @@ class iCloudDataFetcher:
                 print(f"[Error] An exception occurred during unzipping: {e}")
             return None
 
-    def read_unzipped_xml(self, xml_data):
+    def read_unzipped_xml(self, xml_data, data_type='record'):
         """
         Reads unzipped XML data and converts it to a DataFrame.
 
         Parameters:
         - xml_data (BytesIO): The XML data as a BytesIO object.
+        - data_type (str): The type of data to extract ('record' or 'workout').
 
         Returns:
         - pd.DataFrame or None: DataFrame containing XML data if successful, None otherwise.
@@ -216,19 +217,27 @@ class iCloudDataFetcher:
         data_list = []  # Initialize an empty list to collect data
 
         try:
+            xml_data.seek(0)  # Reset pointer to the start of the file
             for event, elem in ET.iterparse(xml_data):
-                if event == "end" and elem.tag == "Record":
+                if event == "end" and elem.tag == data_type.capitalize():
                     # Extract data
                     record = {}
                     for name, value in elem.items():
                         record[name] = value
+
+                    # Handling nested elements
+                    for child in elem:
+                        print(child.tag)
+                        #if child.tag in ['totalDistance', 'totalEnergyBurned', ...]:  # Add relevant tags
+                        #    record[child.tag] = child.text  # or child.attrib if data is in attribute
+
                     data_list.append(record)
 
                     # Clear the element from the tree to free memory
                     elem.clear()
 
             if self.verbose:
-                print("[Info] Successfully read XML data.")
+                print(f"[Info] Successfully read XML {data_type} data.")
 
             # Convert list of dictionaries to DataFrame
             df = pd.DataFrame(data_list)
@@ -303,11 +312,16 @@ class iCloudDataFetcher:
                     print("[Error] Data unzipping failed.")
                 return None
 
-        unzipped_export = self.read_unzipped_xml(unzipped_export)
-        if unzipped_export is not None and not unzipped_export.empty:
+        unzipped_export_record = self.read_unzipped_xml(unzipped_export, data_type='record')
+        unzipped_export_workout = self.read_unzipped_xml(unzipped_export, data_type='workout')
+        if (
+            unzipped_export_record is not None and not unzipped_export_record.empty
+        ) and (
+            unzipped_export_workout is not None and not unzipped_export_workout.empty
+        ):
             if self.verbose:
                 print("[Info] Data fetched successfully.")
-            return unzipped_export
+            return unzipped_export_record, unzipped_export_workout
         else:
             if self.verbose:
                 print("[Error] Data fetching failed.")
@@ -355,11 +369,12 @@ class iCloudDataFetcher:
                     if self.verbose:
                         print("[Error] 2FA failed. Exiting.")
                     return None
-            apple_health_data = self.fetch_apple_health_data()
+            apple_health_data_record, apple_health_data_workout = self.fetch_apple_health_data()
             strong_data = self.fetch_csv_data()
             main_symptoms, custom_entries, custom_symptoms = self.fetch_emoods_data()
             return (
-                apple_health_data,
+                apple_health_data_record,
+                apple_health_data_workout,
                 strong_data,
                 main_symptoms,
                 custom_entries,

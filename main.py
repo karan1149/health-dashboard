@@ -17,14 +17,15 @@ def main():
     # Fetch data from iCloud
     fetcher = iCloudDataFetcher()
     (
-        apple_health_data,
+        apple_health_data_records,
+        apple_health_data_workouts,
         strong_data,
         main_symptoms,
         custom_entries,
         custom_symptoms,
     ) = fetcher.fetch_icloud_data()
 
-    if apple_health_data is None:
+    if apple_health_data_records or apple_health_data_workouts is None:
         print("Failed to fetch iCloud data. Exiting.")
         return
 
@@ -36,12 +37,13 @@ def main():
     # mdp = MergedDataProcessor(hdp, edp)
     mhp = MentalHealthDataProcessor(main_symptoms, custom_entries, custom_symptoms)
 
-    apple_health_data = hdp.clean_health_data(apple_health_data)
+    apple_data_records = hdp.process_record_data(apple_health_data_records)
+    apple_data_workouts = hdp.process_workout_data(apple_health_data_workouts)
     exercise_data = edp.clean_exercise_data(strong_data)
     mental_health_data = mhp.wrangle_mental_health_data()
 
     # processed_data = hdp.join_dates(processed_data)
-    weight_data = wdp.wrangle_weight_data(apple_health_data)
+    weight_data = wdp.wrangle_weight_data(apple_data_records)
     weightlifting_data = wldp.wrangle_weightlifting_data(exercise_data, weight_data)
 
     vdp = VolumeDataProcessor(weightlifting_data)

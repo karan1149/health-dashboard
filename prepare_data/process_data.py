@@ -14,7 +14,7 @@ class HealthDataProcessor:
     Class for processing Apple Health data.
     """
 
-    def clean_health_data(self, data: pd.DataFrame) -> pd.DataFrame:
+    def process_record_data(self, data: pd.DataFrame) -> pd.DataFrame:
         """Cleans raw health data."""
 
         # Rename columns to clean format
@@ -109,6 +109,111 @@ class HealthDataProcessor:
 
         return data
 
+    def extract_workout_data(self, workout_data: pd.DataFrame) -> pd.DataFrame:
+        """
+        Extracts and processes workout data for soccer, non-soccer cardio, and cooldown activities.
+
+        Parameters:
+        - workout_data (pd.DataFrame): DataFrame containing workout data.
+
+        Returns:
+        - pd.DataFrame: Processed workout data with type, date, and duration.
+        """
+        # Rename columns to clean format
+        workout_data = clean_dataframe(workout_data)
+
+        # Clean and prepare workout data
+        workout_data['startdate'] = pd.to_datetime(workout_data['startdate'])
+        workout_data['enddate'] = pd.to_datetime(workout_data['enddate'])
+
+        workout_data['workoutactivitytype'] = workout_data['workoutactivitytype'].str.replace('hkworkoutactivitytype', '')
+        workout_data = workout_data.rename({"workoutactivitytype": "Type"}, axis=1)
+
+        workout_data['duration'] = pd.to_numeric(workout_data['duration'], errors='coerce')
+
+        # Filter for soccer and non-soccer cardio workouts
+        soccer_data = workout_data[workout_data['type'] == 'Soccer']
+        non_soccer_cardio = workout_data[workout_data['type'].isin([
+            'Running', 'Swimming', 'Cycling',
+            'Hiking', 'StairClimbing', 'CardioDance',
+            'Rowing'])]
+
+        # TODO: Define criteria for cooldown sessions
+
+        # Combine data
+        combined_data = pd.concat([soccer_data, non_soccer_cardio])
+
+        # Select relevant columns
+        result = combined_data[['type', 'startdate', 'duration']]
+        result.rename(columns={'startdate': 'date'}, inplace=True)
+
+        return result
+    
+    def get_data_for_workout(self, data, workout):
+        """
+        Extracts data for a specific workout period from a given dataset.
+
+        Parameters:
+        - data (pd.DataFrame): DataFrame containing health data.
+        - workout (pd.DataFrame): DataFrame containing a single workout record.
+
+        Returns:
+        - pd.DataFrame: Data for the specified workout period.
+        """
+        start = workout['startDate'].item()
+        end = workout['endDate'].item()
+        return data[(data['startDate'] >= start) & (data['endDate'] <= end)]
+
+    def convert_to_minute_proportion(self, number):
+        return int(number) + ((number % 1) / 100 * 60)
+
+    def get_pace_for_workout(self, workout):
+        if workout['totalDistance'] == 0.0:
+            return 0.0
+        pace = workout['duration'] / workout['totalDistance']
+        return self.convert_to_minute_proportion(pace)
+
+    def process_workouts(self, workouts, heartrate_data, energy_data, distance_data):
+        """
+        Processes workout data to include heart rate, energy burned, distance, and pace.
+
+        Parameters:
+        - workouts (pd.DataFrame): DataFrame containing workouts.
+        - heartrate_data (pd.DataFrame): DataFrame containing heart rate data.
+        - energy_data (pd.DataFrame): DataFrame containing energy burned data.
+        - distance_data (pd.DataFrame): DataFrame containing distance data.
+
+        Returns:
+        - pd.DataFrame: Enhanced workout data.
+        """
+        workouts['heartrate_data'] = workouts.apply(lambda row: self.get_data_for_workout(heartrate_data, row), axis=1)
+        workouts['energy_data'] = workouts.apply(lambda row: self.get_data_for_workout(energy_data, row), axis=1)
+        workouts['distance_data'] = workouts.apply(lambda row: self.get_data_for_workout(distance_data, row), axis=1)
+
+        workouts['hr_mean'] = workouts['heartrate_data'].apply(lambda x: x['value'].mean() if not x.empty else None)
+        workouts['total_energy_burned'] = workouts['energy_data'].apply(lambda x: x['value'].sum() if not x.empty else None)
+        workouts['total_distance'] = workouts['distance_data'].apply(lambda x: x['value'].sum() if not x.empty else None)
+        workouts['pace'] = workouts.apply(self.get_pace_for_workout, axis=1)
+
+        # Drop the temporary data columns
+        workouts.drop(['heartrate_data', 'energy_data', 'distance_data'], axis=1, inplace=True)
+
+        return workouts
+    
+    def process_workout_data(self, data: pd.DataFrame) -> pd.DataFrame:
+        """
+        A wrapper function that chains cleaning and filtering operations.
+
+        Parameters:
+        - data (pd.DataFrame): Raw workout data.
+
+        Returns:
+        - pd.DataFrame: Processed workout data.
+        """
+        cleaned_data = self.clean_workout_data(data)
+        filtered_data = self.filter_workout_data(cleaned_data)
+
+        return filtered_data
 
 class WeightDataProcessor:
     def __init__(
